@@ -1,7 +1,7 @@
 var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
 var Model = mongoose.model;
-var URI = 'mongodb://localhost:27017/ATNshop?readPreference=primary&appname=MongoDB%20Compass&ssl=false'
+var URI = 'mongodb+srv://ngoc:ngoc@cluster0.bssl1.mongodb.net/ATNShop?retryWrites=true&w=majority'
 var connect = require('mongoose').connect;
 connect(URI, {useNewUrlParser: true});
 
